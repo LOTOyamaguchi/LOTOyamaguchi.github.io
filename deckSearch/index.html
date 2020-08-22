@@ -17,7 +17,7 @@
         }
 
         .container {
-            width:auto;
+            width:700px;
             margin: 20px auto;
             background: #fff;
             border-radius: 4px;
@@ -40,10 +40,10 @@
     </style>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
     <section class="container">
-        <h1>Clash Royale デッキ検索</h1>
+        <h1>Clash Royale デッキ検索(Ver1.0.0）</h1>
         <div id="app">
             <section class="search">
-                <p>全{{ deckCounts }}デッキのうち、{{ searchResults.length }}デッキが見つかりました。</p>
+                <p>全{{ deckCounts }}デッキのうち、<strong>{{ searchResults.length }}</strong>デッキが見つかりました。</p>
                 <ul id="cardList">
                     <li v-for="card in popularCards">
                         <label><input type="radio" v-model="checkCard" v-bind:value="card.id">
